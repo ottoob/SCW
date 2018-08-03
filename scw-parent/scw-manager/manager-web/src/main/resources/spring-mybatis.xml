@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
+        <!--配置数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--配置mybatis配置文件位置-->
+        <property name="configLocation" value="classpath:mybatis/mybatis-comfig.xml"/>
+        <!--配置Mybatis的Mapper文件位置-->
+        <property name="mapperLocations" value="classpath:mybatis/mapper/*"/>
+    </bean>
+    <!--配置包扫描mapper接口位置,加入容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" id="mapperScan">
+        <property name="basePackage" value="com.ottoob.scw.manager.mapper"/>
+    </bean>
+</beans>

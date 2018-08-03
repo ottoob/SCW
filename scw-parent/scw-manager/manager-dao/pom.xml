@@ -19,6 +19,10 @@
         </dependency>
 
         <!--放数据库有关的-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
         <!-- mybatis配置 -->
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -34,6 +38,11 @@
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
         </dependency>
+        <!-- 分页 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
 
 
         <!-- 驱动 -->
@@ -42,4 +51,6 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
+
+
 </project>

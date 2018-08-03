@@ -36,11 +36,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- 数据库模块 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
 
         <!-- 基础框架 -->
 
@@ -65,11 +60,6 @@
 
         <!-- 基础框架完成 -->
 
-        <!-- 分页 -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-        </dependency>
 
         <!-- jackson -->
         <dependency>
